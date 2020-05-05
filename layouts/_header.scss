@@ -1,0 +1,14 @@
+// En tête principal
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-primary;
+  width: 100%;
+  height: 15em;
+  &__heading {
+    color: $color-typo-header;
+    font-size: $size-typo-header;
+  }
+}

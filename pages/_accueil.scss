@@ -1,0 +1,51 @@
+// Accueil
+
+.grid {
+  display: grid;
+  grid-template: 4em 40em 4em 40em 4em / 4% 44% 4% 44% 4%;
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    &--1 {
+      background-color: $color-menu-1;
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+    &--2 {
+      background-color: $color-menu-2;
+      grid-column: 4/5;
+      grid-row: 2/3;
+    }
+    &--3 {
+      background-color: $color-menu-3;
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
+    &--4 {
+      background-color: $color-menu-4;
+      grid-column: 4/5;
+      grid-row: 4/5;
+    }
+  }
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6em;
+  &__heading {
+    text-align: center;
+    font-size: $size-typo-next;
+    color: $color-typo;
+    background-color: $color-primary;
+    border-radius: 1rem;
+    width: 9em;
+    height: auto;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+  }
+}

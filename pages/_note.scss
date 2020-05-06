@@ -1,0 +1,6 @@
+.menu {
+  @include menu-format;
+  &.menu--1 {
+    background-color: $color-menu-1;
+  }
+}

@@ -2,13 +2,14 @@
 
 .grid {
   display: grid;
-  grid-template: 4em 40em 4em 40em 4em / 4% 44% 4% 44% 4%;
-  .menu {
+  grid-template: 6em 38em 5em 38em 5em / 8% 38% 8% 38% 8%;
+  .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    box-shadow: .1em .1em 1em .5em rgba(0,0,0,0.1);
     &--1 {
       background-color: $color-menu-1;
       grid-column: 2/3;
@@ -36,15 +37,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 6em;
+  margin-bottom: 10em;
   &__heading {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: $size-typo-next;
     color: $color-typo;
     background-color: $color-primary;
-    border-radius: 1rem;
-    width: 9em;
-    height: auto;
+    border-radius: 1.5rem;
+    width: 10em;
+    height: 1.8em;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
   }

@@ -1,4 +1,5 @@
 body {
+  color: #404040;
   margin: 0;
   padding: 0;
 }
@@ -20,11 +21,13 @@ body {
   background-color: #569C87;
   width: 100%;
   height: 15em;
+  -webkit-box-shadow: 0 0.1em 0.5em #A1C181;
+          box-shadow: 0 0.1em 0.5em #A1C181;
 }
 
 .header__heading {
   color: #FCCA46;
-  font-size: 10rem;
+  font-size: 6em;
 }
 
 .footer {
@@ -33,17 +36,19 @@ body {
   -ms-grid-rows: 1fr 1fr 1fr;
   -ms-grid-columns: 25% 50% 25%;
       grid-template: 1fr 1fr 1fr/25% 50% 25%;
-  height: 6em;
+  height: 7em;
   width: 100%;
   background-color: #569C87;
   position: fixed;
   bottom: 0;
+  -webkit-box-shadow: 0 -0.1em 0.5em #A1C181;
+          box-shadow: 0 -0.1em 0.5em #A1C181;
 }
 
 .footer__btn {
   color: #FDCB46;
   text-decoration: none;
-  font-size: 2.2rem;
+  font-size: 2.2em;
 }
 
 .footer__btn--mentions {
@@ -66,15 +71,38 @@ body {
   grid-row: 2/3;
 }
 
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 12em;
+}
+
+.page__heading {
+  font-size: 4em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 4em 40em 4em 40em 4em;
-  -ms-grid-columns: 4% 44% 4% 44% 4%;
-      grid-template: 4em 40em 4em 40em 4em / 4% 44% 4% 44% 4%;
+  -ms-grid-rows: 6em 38em 5em 38em 5em;
+  -ms-grid-columns: 8% 38% 8% 38% 8%;
+      grid-template: 6em 38em 5em 38em 5em / 8% 38% 8% 38% 8%;
 }
 
-.grid .menu {
+.grid .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,9 +117,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  -webkit-box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
+          box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-.grid .menu--1 {
+.grid .card--1 {
   background-color: #FCDFDB;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -101,7 +131,7 @@ body {
   grid-row: 2/3;
 }
 
-.grid .menu--2 {
+.grid .card--2 {
   background-color: #FFF5FE;
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
@@ -111,7 +141,7 @@ body {
   grid-row: 2/3;
 }
 
-.grid .menu--3 {
+.grid .card--3 {
   background-color: #F9F9F9;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -121,7 +151,7 @@ body {
   grid-row: 4/5;
 }
 
-.grid .menu--4 {
+.grid .card--4 {
   background-color: #FDFFFD;
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
@@ -141,18 +171,73 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 6em;
+  margin-bottom: 10em;
 }
 
 .next__heading {
-  text-align: center;
-  font-size: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4em;
   color: #FDCB46;
   background-color: #569C87;
-  border-radius: 1rem;
-  width: 9em;
-  height: auto;
+  border-radius: 1.5rem;
+  width: 10em;
+  height: 1.8em;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
+          box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
+  width: 85%;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.menu__heading {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.menu label {
+  padding-top: 3.5em;
+  padding-bottom: 1em;
+  font-size: 2em;
+  clear: both;
+}
+
+.menu p {
+  font-size: 1.5em;
+}
+
+.menu span {
+  float: right;
+  font-weight: bold;
+  padding-left: 2em;
+}
+
+.menu.menu--1 {
+  background-color: #FCDFDB;
 }
 /*# sourceMappingURL=main.css.map */

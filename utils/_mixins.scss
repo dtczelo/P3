@@ -1,0 +1,48 @@
+// Standard page de menu
+
+@mixin page-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12em;
+}
+
+// Standard titre de menu
+
+@mixin page-heading-format {
+  font-size: $size-typo-heading-page;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+// Standard menu
+
+@mixin menu-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
+  width: 85%;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  &__heading {
+    font-size: $size-typo-heading-menu;
+    margin-bottom: 0;
+  }
+  label {
+    padding-top: 3.5em;
+    padding-bottom: 1em;
+    font-size: 2em;
+    clear: both;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  span {
+    float: right;
+    font-weight: bold;
+    padding-left: 2em;
+  }
+}

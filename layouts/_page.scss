@@ -1,0 +1,6 @@
+.page {
+  @include page-format;
+  &__heading {
+    @include page-heading-format;
+  }
+}

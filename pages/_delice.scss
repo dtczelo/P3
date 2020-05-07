@@ -1,0 +1,10 @@
+.menu {
+    @include menu-format;
+    &.menu--3 {
+      background-color: $color-menu-3;
+      font-family: 'Short Stack', sans-serif;
+      h3 {
+        font-family: 'Dancing Script', sans-serif;
+      }
+    }
+  }

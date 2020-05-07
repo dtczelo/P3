@@ -2,5 +2,13 @@
   @include menu-format;
   &.menu--1 {
     background-color: $color-menu-1;
+    font-family: 'Overlock', sans-serif;
+    h3, h4 {
+      font-family: 'Devonshire', sans-serif;
+    }
   }
+}
+
+h4 {
+    font-size: 2em;
 }

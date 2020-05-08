@@ -22,7 +22,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 5rem 5rem 5rem 5rem;
   box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
   max-width: 85%;
@@ -41,12 +40,44 @@
     font-size: 2em;
     clear: both;
   }
+  .underligne {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) .1rem,
+        transparent 1px
+      )
+      no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 1s;
+    &:hover {
+      background-size: 100% 100%;
+    }
+  }
   &__text {
     font-size: $size-typo-text-menu;
   }
-  span {
+  .price {
     float: right;
     font-weight: bold;
     padding-left: 2em;
   }
 }
+
+/*.underligne {
+  &::after {
+    content: "";
+    position: relative;
+    width: 0;
+    height: 0.2rem;
+    display: block;
+    margin-top: 1px;
+    right: 0;
+    background: black;
+    transition: all 700ms ease-in-out;
+  }
+  &:hover:after {
+    width: 100%;
+    left: 0;
+    background: black;
+  }*/

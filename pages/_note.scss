@@ -2,13 +2,19 @@
   @include menu-format;
   &.menu--1 {
     background-color: $color-menu-1;
-    font-family: 'Overlock', sans-serif;
-    h3, h4 {
-      font-family: 'Devonshire', sans-serif;
+    .fa--top {
+      font-size: 4rem;
+      margin-top: 4rem;
+    }
+    .fa--bottom {
+      font-size: 2.5rem;
+      margin-top: 4rem; 
     }
   }
 }
 
 h4 {
-    font-size: 2em;
+  margin-top: 0;
+  text-align: center;
+  font-size: 2em;
 }

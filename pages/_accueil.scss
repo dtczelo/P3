@@ -9,7 +9,26 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    box-shadow: .1em .1em 1em .5em rgba(0,0,0,0.1);
+    box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      &--out {
+        font-size: $size-typo-card;
+        .title {
+          font-size: $size-typo-heading-card;
+          }
+        }
+        &--in {
+          font-size: $size-typo-card*1.8;
+          .title {
+            font-size: $size-typo-heading-card*1.8;
+            }
+        }
+      }
     &--1 {
       background-color: $color-menu-1;
       grid-column: 2/3;

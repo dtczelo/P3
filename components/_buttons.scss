@@ -1,31 +1,36 @@
-// Animations Wiggle pieds de page
+//Animation Carte des menus, accueil
 
-.footer {
-  &__btn {
-    &:hover {
-      animation: wiggle 200ms linear 3 both;
+.card {
+  .card__content--in {
+    visibility: hidden;
+  }
+  &:hover {
+    .card__content--out {
+      animation: fadeout 2s forwards;
+    }
+    .card__content--in {
+      visibility: visible;
+      animation: fadein 2s 300ms backwards cubic-bezier(.77,.02,.24,.96);
+      
     }
   }
 }
 
-@keyframes wiggle {
+@keyframes fadeout {
   0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
+    opacity: 1;
   }
   100% {
-    transform: translate(0);
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -33,10 +38,10 @@
 
 .next {
   &__heading {
-      .next__dot {
-          visibility: hidden;
-          display: inline;
-      }
+    .next__dot {
+      visibility: hidden;
+      display: inline;
+    }
     &:hover {
       .next__dot {
         visibility: visible;
@@ -66,5 +71,36 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+// Animations Wiggle pieds de page
+
+.footer {
+  &__btn {
+    &:hover {
+      animation: wiggle 200ms linear 3 both;
+    }
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
   }
 }

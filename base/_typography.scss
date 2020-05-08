@@ -1,5 +1,96 @@
 // Polices de caractères
 
-body{
-    font-family: 'montserrat', sans-serif;
+//Base
+
+body {
+  font-family: $font-primary;
+}
+
+//Menu 1
+
+.menu {
+  &.menu--1 {
+    font-family: $font-menu-1;
+    h3,
+    h4 {
+      font-family: $font-heading-1;
+    }
+  }
+}
+
+.card {
+  &.card--1 {
+    .title {
+      font-family: $font-heading-1;
+    }
+    p {
+      font-family: $font-menu-1;
+    }
+  }
+}
+
+//Menu 2
+
+.menu {
+  &.menu--2 {
+    font-family: $font-menu-2;
+    h3 {
+      font-family: $font-heading-2;
+    }
+  }
+}
+
+.card {
+  &.card--2 {
+    .title {
+      font-family: $font-heading-2;
+    }
+    p {
+      font-family: $font-menu-2;
+    }
+  }
+}
+
+//Menu 3
+
+.menu {
+  &.menu--3 {
+    font-family: $font-menu-3;
+    h3 {
+      font-family: $font-heading-3;
+    }
+  }
+}
+
+.card {
+  &.card--3 {
+    .title {
+      font-family: $font-heading-3;
+    }
+    p {
+      font-family: $font-menu-3;
+    }
+  }
+}
+
+//Menu 4
+
+.menu {
+  &.menu--4 {
+    font-family: $font-menu-4;
+    h3 {
+      font-family: $font-heading-4;
+    }
+  }
+}
+
+.card {
+  &.card--4 {
+    .title {
+      font-family: $font-heading-4;
+    }
+    p {
+      font-family: $font-menu-4;
+    }
+  }
 }

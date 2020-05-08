@@ -5,65 +5,122 @@ body {
 }
 
 body {
-  font-family: 'montserrat', sans-serif;
+  font-family: "montserrat", sans-serif;
 }
 
-.footer__btn:hover {
-  -webkit-animation: wiggle 200ms linear 3 both;
-          animation: wiggle 200ms linear 3 both;
+.menu.menu--1 {
+  font-family: "Overlock", sans-serif;
 }
 
-@-webkit-keyframes wiggle {
+.menu.menu--1 h3,
+.menu.menu--1 h4 {
+  font-family: "Devonshire", sans-serif;
+}
+
+.card.card--1 .title {
+  font-family: "Devonshire", sans-serif;
+}
+
+.card.card--1 p {
+  font-family: "Overlock", sans-serif;
+}
+
+.menu.menu--2 {
+  font-family: "Cherry swash", sans-serif;
+}
+
+.menu.menu--2 h3 {
+  font-family: "Montez", sans-serif;
+}
+
+.card.card--2 .title {
+  font-family: "Montez", sans-serif;
+}
+
+.card.card--2 p {
+  font-family: "Cherry swash", sans-serif;
+}
+
+.menu.menu--3 {
+  font-family: "Short Stack", sans-serif;
+}
+
+.menu.menu--3 h3 {
+  font-family: "Dancing Script", sans-serif;
+}
+
+.card.card--3 .title {
+  font-family: "Dancing Script", sans-serif;
+}
+
+.card.card--3 p {
+  font-family: "Short Stack", sans-serif;
+}
+
+.menu.menu--4 {
+  font-family: "Short Stack", sans-serif;
+}
+
+.menu.menu--4 h3 {
+  font-family: "Courgette", sans-serif;
+}
+
+.card.card--4 .title {
+  font-family: "Courgette", sans-serif;
+}
+
+.card.card--4 p {
+  font-family: "Short Stack", sans-serif;
+}
+
+.card .card__content--in {
+  visibility: hidden;
+}
+
+.card:hover .card__content--out {
+  -webkit-animation: fadeout 2s forwards;
+          animation: fadeout 2s forwards;
+}
+
+.card:hover .card__content--in {
+  visibility: visible;
+  -webkit-animation: fadein 2s 300ms backwards cubic-bezier(0.77, 0.02, 0.24, 0.96);
+          animation: fadein 2s 300ms backwards cubic-bezier(0.77, 0.02, 0.24, 0.96);
+}
+
+@-webkit-keyframes fadeout {
   0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-2px, 2px);
-            transform: translate(-2px, 2px);
-  }
-  40% {
-    -webkit-transform: translate(-2px, -2px);
-            transform: translate(-2px, -2px);
-  }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px);
-  }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-            transform: translate(2px, -2px);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    opacity: 0;
   }
 }
 
-@keyframes wiggle {
+@keyframes fadeout {
   0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-2px, 2px);
-            transform: translate(-2px, 2px);
-  }
-  40% {
-    -webkit-transform: translate(-2px, -2px);
-            transform: translate(-2px, -2px);
-  }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px);
-  }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-            transform: translate(2px, -2px);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -126,6 +183,65 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.footer__btn:hover {
+  -webkit-animation: wiggle 200ms linear 3 both;
+          animation: wiggle 200ms linear 3 both;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
 
@@ -210,7 +326,7 @@ body {
 }
 
 .page__heading {
-  font-size: 3.5em;
+  font-size: 2.5em;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
@@ -240,6 +356,39 @@ body {
   text-decoration: none;
   -webkit-box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
           box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.grid .card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+
+.grid .card__content--out {
+  font-size: 1.6rem;
+}
+
+.grid .card__content--out .title {
+  font-size: 1.7rem;
+}
+
+.grid .card__content--in {
+  font-size: 2.88rem;
+}
+
+.grid .card__content--in .title {
+  font-size: 3.06rem;
 }
 
 .grid .card--1 {
@@ -331,11 +480,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5rem 5rem 5rem 5rem;
   -webkit-box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
           box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
-  width: 85%;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  max-width: 85%;
 }
 
 .menu__heading {
@@ -343,15 +491,20 @@ body {
   margin-bottom: 0;
 }
 
+.menu h3 {
+  margin: 0;
+  text-align: center;
+}
+
 .menu label {
+  text-align: center;
   padding-top: 3em;
   padding-bottom: 0.5em;
   font-size: 2em;
   clear: both;
 }
 
-.menu p {
-  text-align: left;
+.menu__text {
   font-size: 1.5em;
 }
 
@@ -363,14 +516,21 @@ body {
 
 .menu.menu--1 {
   background-color: #FCDFDB;
-  font-family: 'Overlock', sans-serif;
 }
 
-.menu.menu--1 h3, .menu.menu--1 h4 {
-  font-family: 'Devonshire', sans-serif;
+.menu.menu--1 .fa--top {
+  font-size: 4rem;
+  margin-top: 4rem;
+}
+
+.menu.menu--1 .fa--bottom {
+  font-size: 2.5rem;
+  margin-top: 4rem;
 }
 
 h4 {
+  margin-top: 0;
+  text-align: center;
   font-size: 2em;
 }
 
@@ -388,11 +548,10 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5rem 5rem 5rem 5rem;
   -webkit-box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
           box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
-  width: 85%;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  max-width: 85%;
 }
 
 .menu__heading {
@@ -400,15 +559,20 @@ h4 {
   margin-bottom: 0;
 }
 
+.menu h3 {
+  margin: 0;
+  text-align: center;
+}
+
 .menu label {
+  text-align: center;
   padding-top: 3em;
   padding-bottom: 0.5em;
   font-size: 2em;
   clear: both;
 }
 
-.menu p {
-  text-align: left;
+.menu__text {
   font-size: 1.5em;
 }
 
@@ -420,11 +584,6 @@ h4 {
 
 .menu.menu--2 {
   background-color: #FFF5FE;
-  font-family: 'Cherry swash', sans-serif;
-}
-
-.menu.menu--2 h3 {
-  font-family: 'Montez', sans-serif;
 }
 
 .menu {
@@ -441,11 +600,10 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5rem 5rem 5rem 5rem;
   -webkit-box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
           box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
-  width: 85%;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  max-width: 85%;
 }
 
 .menu__heading {
@@ -453,15 +611,20 @@ h4 {
   margin-bottom: 0;
 }
 
+.menu h3 {
+  margin: 0;
+  text-align: center;
+}
+
 .menu label {
+  text-align: center;
   padding-top: 3em;
   padding-bottom: 0.5em;
   font-size: 2em;
   clear: both;
 }
 
-.menu p {
-  text-align: left;
+.menu__text {
   font-size: 1.5em;
 }
 
@@ -473,11 +636,6 @@ h4 {
 
 .menu.menu--3 {
   background-color: #F9F9F9;
-  font-family: 'Short Stack', sans-serif;
-}
-
-.menu.menu--3 h3 {
-  font-family: 'Dancing Script', sans-serif;
 }
 
 .menu {
@@ -494,11 +652,10 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5rem 5rem 5rem 5rem;
   -webkit-box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
           box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
-  width: 85%;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  max-width: 85%;
 }
 
 .menu__heading {
@@ -506,15 +663,20 @@ h4 {
   margin-bottom: 0;
 }
 
+.menu h3 {
+  margin: 0;
+  text-align: center;
+}
+
 .menu label {
+  text-align: center;
   padding-top: 3em;
   padding-bottom: 0.5em;
   font-size: 2em;
   clear: both;
 }
 
-.menu p {
-  text-align: left;
+.menu__text {
   font-size: 1.5em;
 }
 
@@ -526,10 +688,5 @@ h4 {
 
 .menu.menu--4 {
   background-color: #FDFFFD;
-  font-family: 'Short Stack', sans-serif;
-}
-
-.menu.menu--4 h3 {
-  font-family: 'Courgette', sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

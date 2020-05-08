@@ -1,5 +1,17 @@
 // Variables
 
+//Polices
+
+$font-primary: 'montserrat', sans-serif;
+$font-heading-1: 'Devonshire', sans-serif;
+$font-menu-1: 'Overlock', sans-serif;
+$font-heading-2:'Montez', sans-serif;
+$font-menu-2: 'Cherry swash', sans-serif;
+$font-heading-3: 'Dancing Script', sans-serif;
+$font-menu-3: 'Short Stack', sans-serif;
+$font-heading-4: 'Courgette', sans-serif;
+$font-menu-4: 'Short Stack', sans-serif;
+
 //Couleurs
 
 $color-primary: #569C87;
@@ -11,8 +23,13 @@ $color-menu-3: #F9F9F9;
 $color-menu-4: #FDFFFD;
 $color-border:#A1C181;
 
+//Taille Typographie
+
 $size-typo-header: 6em;
 $size-typo-next: 4em;
 $size-typo-footer: 2.2em;
-$size-typo-heading-page: 3.5em;
+$size-typo-heading-card: 1.7rem;
+$size-typo-card: 1.6rem;
+$size-typo-heading-page: 2.5em;
 $size-typo-heading-menu: 3.2em;
+$size-typo-text-menu: 1.5em;

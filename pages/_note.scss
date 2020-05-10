@@ -4,38 +4,36 @@
     background-color: $color-menu-1;
     .fa--top {
       text-align: center;
-      font-size: 4rem;
-      margin-top: 4rem;
+      font-size: 6rem;
+      margin-top: 0.5rem;
     }
     .fa--bottom {
       text-align: center;
-      font-size: 2.5rem;
-      margin-top: 4rem;
+      font-size: 3rem;
     }
-    /*b {
-      &::after {//Barre horizontal entrée plat dessert
-        content: "";
-        display: block;
-        position: relative;
-        left: 0;
-        width: 100%;
-        bottom: $size-typo-label/1.5;
-        height: 10px;
-        background: black;
-      }
-      .underline {//fond coupant la barre
-        display: inline-block;
-        padding: 0 90px;
-        background: $color-menu-1;
-        position: relative;
-        z-index: 1;
-      }
-    }*/
+    i {
+      background: linear-gradient(
+        90deg,
+        rgba(221, 81, 46, 1) 13%,
+        rgba(251, 149, 94, 1) 56%,
+        rgba(254, 204, 177, 1) 98%
+      );
+      @include gradient-text;
   }
+}
+}
+
+.menu__foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 h4 {
+  margin-bottom: 0;
   margin-top: 0;
+  padding-left: 0.5rem;
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
 }

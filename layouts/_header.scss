@@ -6,10 +6,32 @@
   align-items: center;
   background-color: $color-primary;
   width: 100%;
-  height: 15em;
+  height: 13rem;
   box-shadow: 0 0.1em 0.5em $color-border;
   &__heading {
     color: $color-typo-header;
     font-size: $size-typo-header;
+  }
+}
+
+//Responsive tablette
+
+@include tablette-only {
+  .header {
+    height: 11em;
+    &__heading {
+      font-size: $size-typo-header/1.8;
+    }
+  }
+}
+
+//Responsive mobile
+
+@include mobile-only {
+  .header {
+    height: 8rem;
+    &__heading {
+      font-size: $size-typo-header/2;
+    }
   }
 }

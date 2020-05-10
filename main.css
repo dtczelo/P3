@@ -1,6 +1,5 @@
-@charset "UTF-8";
 body {
-  color: #404040;
+  color: #404040d5;
   margin: 0;
   padding: 0;
 }
@@ -258,7 +257,7 @@ body {
           align-items: center;
   background-color: #569C87;
   width: 100%;
-  height: 15em;
+  height: 13rem;
   -webkit-box-shadow: 0 0.1em 0.5em #A1C181;
           box-shadow: 0 0.1em 0.5em #A1C181;
 }
@@ -268,12 +267,30 @@ body {
   font-size: 6em;
 }
 
+@media (min-width: 425px) and (max-width: 768px) {
+  .header {
+    height: 11em;
+  }
+  .header__heading {
+    font-size: 3.33333em;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    height: 8rem;
+  }
+  .header__heading {
+    font-size: 3em;
+  }
+}
+
 .footer {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr 1fr;
-  -ms-grid-columns: 30% 40% 30%;
-      grid-template: 1fr 1fr 1fr/30% 40% 30%;
+  -ms-grid-columns: 47.5% 5% 47.5%;
+      grid-template: 1fr 1fr 1fr/47.5% 5% 47.5%;
   height: 7em;
   width: 100%;
   background-color: #569C87;
@@ -310,6 +327,35 @@ body {
   grid-row: 2/3;
 }
 
+@media (max-width: 425px) {
+  .footer {
+    -ms-grid-rows: 1fr 2fr 2fr 2fr 1fr;
+    -ms-grid-columns: 10% 80% 10%;
+        grid-template: 1fr 2fr 2fr 2fr 1fr/10% 80% 10%;
+    position: initial;
+  }
+  .footer__btn {
+    font-size: 1.69231em;
+  }
+  .footer__btn--mentions {
+    padding-left: 0;
+    text-align: center;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .footer__btn--contact {
+    padding-right: 0;
+    text-align: center;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+}
+
 .page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,16 +375,16 @@ body {
 
 .page__heading {
   font-size: 2.5rem;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 6em 38em 5em 38em 5em;
+  -ms-grid-rows: 5rem 38rem 5rem 38rem 5rem;
   -ms-grid-columns: 8% 38% 8% 38% 8%;
-      grid-template: 6em 38em 5em 38em 5em / 8% 38% 8% 38% 8%;
+      grid-template: 5rem 38rem 5rem 38rem 5rem / 8% 38% 8% 38% 8%;
 }
 
 .grid .card {
@@ -403,6 +449,22 @@ body {
   grid-row: 2/3;
 }
 
+.grid .card--1 i {
+  background: -webkit-gradient(linear, left top, right top, color-stop(13%, #dd512e), color-stop(56%, #fb955e), color-stop(98%, #feccb1));
+  background: linear-gradient(90deg, #dd512e 13%, #fb955e 56%, #feccb1 98%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.grid .card--1 .title,
+.grid .card--1 p {
+  background: rgba(0, 0, 0, 0.8);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .grid .card--2 {
   background-color: #FFF5FE;
   -ms-grid-column: 4;
@@ -411,6 +473,21 @@ body {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+}
+
+.grid .card--2 .title {
+  background: #bb5e00;
+  background: linear-gradient(162deg, #bb5e00 34%, #7c00ff 70%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.grid .card--2 p {
+  background-color: #bb5e00;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .grid .card--3 {
@@ -423,6 +500,21 @@ body {
   grid-row: 4/5;
 }
 
+.grid .card--3 .title {
+  background: #0028a6;
+  background: linear-gradient(152deg, rgba(0, 39, 166, 0.945) 42%, rgba(60, 164, 228, 0.979) 73%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.grid .card--3 p {
+  background-color: #2176e6f8;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .grid .card--4 {
   background-color: #FDFFFD;
   -ms-grid-column: 4;
@@ -431,6 +523,21 @@ body {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
+}
+
+.grid .card--4 .title {
+  background: #0d9100;
+  background: linear-gradient(135deg, rgba(13, 145, 0, 0.815586) 35%, rgba(33, 195, 14, 0.339395) 70%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.grid .card--4 p {
+  background-color: #2ba120c2;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .next {
@@ -443,7 +550,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10em;
+  margin-bottom: 10rem;
 }
 
 .next__heading {
@@ -466,6 +573,110 @@ body {
   height: 1.8em;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .grid {
+    -ms-grid-rows: 5rem 36rem 5rem 36rem 5rem 36rem 5rem 36rem 5rem;
+    -ms-grid-columns: 10% 80% 10%;
+        grid-template: 5rem 36rem 5rem 36rem 5rem 36rem 5rem 36rem 5rem/ 10% 80% 10%;
+  }
+  .grid .card--1 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .grid .card--2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+  .grid .card--3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6/7;
+  }
+  .grid .card--4 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 1;
+    grid-row: 8/9;
+  }
+  .next {
+    margin-bottom: 8rem;
+  }
+  .next__heading {
+    font-size: 2.22222em;
+  }
+}
+
+@media (max-width: 425px) {
+  .grid {
+    -ms-grid-rows: 5rem 28rem 5rem 28rem 5rem 28rem 5rem 28rem 5rem;
+    -ms-grid-columns: 5% 90% 5%;
+        grid-template: 5rem 28rem 5rem 28rem 5rem 28rem 5rem 28rem 5rem/ 5% 90% 5%;
+  }
+  .grid .card__content--out {
+    font-size: 1.6rem;
+  }
+  .grid .card__content--out .title {
+    font-size: 1.7rem;
+  }
+  .grid .card__content--in {
+    font-size: 2.05714rem;
+  }
+  .grid .card__content--in .title {
+    font-size: 2.18571rem;
+  }
+  .grid .card--1 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .grid .card--2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+  .grid .card--3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6/7;
+  }
+  .grid .card--4 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 1;
+    grid-row: 8/9;
+  }
+  .next {
+    margin-bottom: 0;
+  }
+  .next__heading {
+    font-size: 2em;
+  }
 }
 
 .menu {
@@ -526,43 +737,46 @@ body {
 
 .menu.menu--1 {
   background-color: #FCDFDB;
-  /*b {
-      &::after {//Barre horizontal entrée plat dessert
-        content: "";
-        display: block;
-        position: relative;
-        left: 0;
-        width: 100%;
-        bottom: $size-typo-label/1.5;
-        height: 10px;
-        background: black;
-      }
-      .underline {//fond coupant la barre
-        display: inline-block;
-        padding: 0 90px;
-        background: $color-menu-1;
-        position: relative;
-        z-index: 1;
-      }
-    }*/
 }
 
 .menu.menu--1 .fa--top {
   text-align: center;
-  font-size: 4rem;
-  margin-top: 4rem;
+  font-size: 6rem;
+  margin-top: 0.5rem;
 }
 
 .menu.menu--1 .fa--bottom {
   text-align: center;
-  font-size: 2.5rem;
-  margin-top: 4rem;
+  font-size: 3rem;
+}
+
+.menu.menu--1 i {
+  background: -webkit-gradient(linear, left top, right top, color-stop(13%, #dd512e), color-stop(56%, #fb955e), color-stop(98%, #feccb1));
+  background: linear-gradient(90deg, #dd512e 13%, #fb955e 56%, #feccb1 98%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.menu__foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
 }
 
 h4 {
+  margin-bottom: 0;
   margin-top: 0;
+  padding-left: 0.5rem;
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .menu {
@@ -623,6 +837,19 @@ h4 {
 
 .menu.menu--2 {
   background-color: #FFF5FE;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, rgba(187, 93, 0, 0.671)), color-stop(70%, rgba(35, 0, 161, 0.568)));
+  background: linear-gradient(180deg, rgba(187, 93, 0, 0.671) 34%, rgba(35, 0, 161, 0.568) 70%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.menu.menu--2 .menu__heading {
+  font-size: 4.16rem;
+  background: linear-gradient(162deg, rgba(187, 93, 0, 0.651) 24%, rgba(147, 41, 233, 0.548) 60%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .menu {
@@ -683,6 +910,28 @@ h4 {
 
 .menu.menu--3 {
   background-color: #F9F9F9;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(42%, rgba(0, 40, 166, 0.866006)), color-stop(73%, rgba(60, 165, 228, 0.924829)));
+  background: linear-gradient(180deg, rgba(0, 40, 166, 0.866006) 42%, rgba(60, 165, 228, 0.924829) 73%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.menu.menu--3 .menu__heading {
+  font-size: 6.4rem;
+  font-weight: normal;
+  background: #0028a6;
+  background: linear-gradient(152deg, rgba(0, 39, 166, 0.945) 32%, rgba(60, 164, 228, 0.979) 73%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.menu.menu--3 .menu__text, .menu.menu--3 span {
+  background: rgba(0, 0, 0, 0.8);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .menu {
@@ -743,5 +992,25 @@ h4 {
 
 .menu.menu--4 {
   background-color: #FDFFFD;
+  background: radial-gradient(circle, rgba(33, 195, 14, 0.339395) 21%, rgba(13, 145, 0, 0.815586) 65%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.menu.menu--4 .menu__heading {
+  font-size: 5.76rem;
+  font-weight: normal;
+  background: linear-gradient(135deg, rgba(12, 145, 0, 0.459) 35%, rgba(117, 228, 105, 0.863) 70%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.menu.menu--4 .menu__text, .menu.menu--4 span {
+  background: rgba(0, 0, 0, 0.8);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 /*# sourceMappingURL=main.css.map */

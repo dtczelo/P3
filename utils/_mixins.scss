@@ -1,4 +1,4 @@
-// Standard page de menu
+//Standard page de menu
 
 @mixin page-format {
   display: flex;
@@ -8,15 +8,15 @@
   margin-bottom: 12em;
 }
 
-// Standard titre de menu
+//Standard titre de menu
 
 @mixin page-heading-format {
   font-size: $size-typo-heading-page;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
-// Standard menu
+//Standard menu
 
 @mixin menu-format {
   display: flex;
@@ -61,5 +61,29 @@
     float: right;
     font-weight: bold;
     padding-left: 2em;
+  }
+}
+
+//Intégration dégradé au texte
+
+@mixin gradient-text {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+//Responsive Tablette
+
+@mixin tablette-only {
+  @media (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
+    @content;    
+  }
+}
+
+//Responsive Mobile
+
+@mixin mobile-only {
+  @media (max-width: map-get($breakpoints, mobile)) {
+    @content;    
   }
 }

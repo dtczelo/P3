@@ -10,8 +10,27 @@
     .fa--bottom {
       text-align: center;
       font-size: 2.5rem;
-      margin-top: 4rem; 
+      margin-top: 4rem;
     }
+    /*b {
+      &::after {//Barre horizontal entrée plat dessert
+        content: "";
+        display: block;
+        position: relative;
+        left: 0;
+        width: 100%;
+        bottom: $size-typo-label/1.5;
+        height: 10px;
+        background: black;
+      }
+      .underline {//fond coupant la barre
+        display: inline-block;
+        padding: 0 90px;
+        background: $color-menu-1;
+        position: relative;
+        z-index: 1;
+      }
+    }*/
   }
 }
 

@@ -6,12 +6,11 @@
   }
   &:hover {
     .card__content--out {
-      animation: fadeout 2s forwards;
+      animation: fadeout 1s forwards;
     }
     .card__content--in {
       visibility: visible;
-      animation: fadein 2s 300ms backwards cubic-bezier(.77,.02,.24,.96);
-      
+      animation: fadein 1.5s 300ms backwards cubic-bezier(.77,.03,.41,.81);
     }
   }
 }

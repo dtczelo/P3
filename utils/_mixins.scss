@@ -33,23 +33,23 @@
     margin: 0;
     text-align: center;
   }
-  label {
+  b {
     text-align: center;
     padding-top: 3em;
     padding-bottom: 0.5em;
-    font-size: 2em;
+    font-size: $size-typo-label;
     clear: both;
   }
-  .underligne {
+  .underline {
     background: linear-gradient(
         to top,
         rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 1) .1rem,
+        rgba(0, 0, 0, 1) 0.1rem,
         transparent 1px
       )
       no-repeat;
     background-size: 0% 100%;
-    transition: background-size 1s;
+    transition: background-size 200ms ease-in-out;
     &:hover {
       background-size: 100% 100%;
     }
@@ -63,21 +63,3 @@
     padding-left: 2em;
   }
 }
-
-/*.underligne {
-  &::after {
-    content: "";
-    position: relative;
-    width: 0;
-    height: 0.2rem;
-    display: block;
-    margin-top: 1px;
-    right: 0;
-    background: black;
-    transition: all 700ms ease-in-out;
-  }
-  &:hover:after {
-    width: 100%;
-    left: 0;
-    background: black;
-  }*/

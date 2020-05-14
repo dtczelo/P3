@@ -60,10 +60,20 @@
         background-size: 100% 100%;
       }
     }
+    .text-line {
+      display: flex;
+      flex-direction: row;
+    }
     .price {
-      float: right;
+      width: 10%;
+      display: inline;
       font-weight: bold;
       padding-left: 2em;
+      overflow-wrap: normal;
+    }
+    p {
+      width: 90%;
+      margin-top: 0;
     }
   }
   @include tablette-only {

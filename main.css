@@ -1,4 +1,5 @@
 body {
+  overflow-wrap: anywhere;
   color: #404040d5;
   margin: 0;
   padding: 0;
@@ -733,10 +734,27 @@ body {
   background-size: 100% 100%;
 }
 
+.menu .menu__content .text-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .menu .menu__content .price {
-  float: right;
+  width: 10%;
+  display: inline;
   font-weight: bold;
   padding-left: 2em;
+  overflow-wrap: normal;
+}
+
+.menu .menu__content p {
+  width: 90%;
+  margin-top: 0;
 }
 
 @media (min-width: 490px) and (max-width: 768px) {
@@ -847,10 +865,27 @@ h4 {
   background-size: 100% 100%;
 }
 
+.menu .menu__content .text-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .menu .menu__content .price {
-  float: right;
+  width: 10%;
+  display: inline;
   font-weight: bold;
   padding-left: 2em;
+  overflow-wrap: normal;
+}
+
+.menu .menu__content p {
+  width: 90%;
+  margin-top: 0;
 }
 
 @media (min-width: 490px) and (max-width: 768px) {
@@ -937,10 +972,27 @@ h4 {
   background-size: 100% 100%;
 }
 
+.menu .menu__content .text-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .menu .menu__content .price {
-  float: right;
+  width: 10%;
+  display: inline;
   font-weight: bold;
   padding-left: 2em;
+  overflow-wrap: normal;
+}
+
+.menu .menu__content p {
+  width: 90%;
+  margin-top: 0;
 }
 
 @media (min-width: 490px) and (max-width: 768px) {
@@ -978,7 +1030,7 @@ h4 {
 }
 
 .menu.menu--3 .menu__text,
-.menu.menu--3 span {
+.menu.menu--3 .price {
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -1034,10 +1086,27 @@ h4 {
   background-size: 100% 100%;
 }
 
+.menu .menu__content .text-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .menu .menu__content .price {
-  float: right;
+  width: 10%;
+  display: inline;
   font-weight: bold;
   padding-left: 2em;
+  overflow-wrap: normal;
+}
+
+.menu .menu__content p {
+  width: 90%;
+  margin-top: 0;
 }
 
 @media (min-width: 490px) and (max-width: 768px) {
@@ -1074,7 +1143,7 @@ h4 {
 }
 
 .menu.menu--4 .menu__text,
-.menu.menu--4 span {
+.menu.menu--4 .price {
   background: rgba(0, 0, 0, 0.8);
   color: transparent;
   background-clip: text;

@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 12em;
+  margin-bottom: 12rem;
 }
 
 //Standard titre de menu
@@ -24,43 +24,57 @@
   justify-content: center;
   padding: 5rem 5rem 5rem 5rem;
   box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
-  max-width: 85%;
+  width: 70%;
   &__heading {
+    text-align: center;
     font-size: $size-typo-heading-menu;
     margin-bottom: 0;
-  }
-  h3 {
-    margin: 0;
-    text-align: center;
-  }
-  b {
-    text-align: center;
-    padding-top: 3em;
-    padding-bottom: 0.5em;
-    font-size: $size-typo-label;
-    clear: both;
-  }
-  .underline {
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 1) 0.1rem,
-        transparent 1px
-      )
-      no-repeat;
-    background-size: 0% 100%;
-    transition: background-size 200ms ease-in-out;
-    &:hover {
-      background-size: 100% 100%;
-    }
+    margin-top: 0;
   }
   &__text {
     font-size: $size-typo-text-menu;
   }
-  .price {
-    float: right;
-    font-weight: bold;
-    padding-left: 2em;
+  .menu__content {
+    h3 {
+      margin: 0;
+    }
+    b {
+      display: block;
+      text-align: center;
+      padding-top: 2.5em;
+      padding-bottom: 0.5em;
+      font-size: $size-typo-label;
+      clear: both;
+    }
+    .underline {
+      background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 1) 0.1rem,
+          transparent 1px
+        )
+        no-repeat;
+      background-size: 0% 100%;
+      transition: background-size 400ms cubic-bezier(.5,.02,.04,.98);
+      &:hover {
+        background-size: 100% 100%;
+      }
+    }
+    .price {
+      float: right;
+      font-weight: bold;
+      padding-left: 2em;
+    }
+  }
+  @include tablette-only {
+    p {
+      margin-bottom: 4rem;
+    }
+  }
+  @include mobile-only {
+    p {
+      margin-bottom: 3rem;
+    }
   }
 }
 
@@ -76,7 +90,7 @@
 
 @mixin tablette-only {
   @media (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
-    @content;    
+    @content;
   }
 }
 
@@ -84,6 +98,6 @@
 
 @mixin mobile-only {
   @media (max-width: map-get($breakpoints, mobile)) {
-    @content;    
+    @content;
   }
 }

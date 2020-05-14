@@ -1,23 +1,29 @@
 .menu {
-    @include menu-format;
-    &.menu--3 {
-      background-color: $color-menu-3;
-      background: linear-gradient(180deg, rgba(0,40,166,0.8660057773109244) 42%, rgba(60,165,228,0.924829306722689) 73%);
+  @include menu-format;
+  &.menu--3 {
+    background-color: $color-menu-3;
+    .menu__heading {
+      font-size: $size-typo-heading-menu * 2;
+      font-weight: normal;
+      background: rgb(0, 40, 166);
+      background: linear-gradient(
+        152deg,
+        rgba(0, 39, 166, 0.945) 32%,
+        rgba(60, 164, 228, 0.979) 73%
+      );
       @include gradient-text;
-      .menu__heading {
-        font-size: $size-typo-heading-menu*2;
-        font-weight: normal;
-        background: rgb(0, 40, 166);
-        background: linear-gradient(
-          152deg,
-          rgba(0, 39, 166, 0.945) 32%,
-          rgba(60, 164, 228, 0.979) 73%
-        );
-        @include gradient-text;
-      }
-      .menu__text, span {
-        background: rgba(0, 0, 0, 0.8);
-        @include gradient-text
-      }
+    }
+    .menu__content {
+      background: linear-gradient(
+        180deg,
+        rgba(0, 40, 166, 0.8660057773109244) 42%,
+        rgba(60, 165, 228, 0.924829306722689) 73%
+      );
+      @include gradient-text;
+    }
+    .menu__text,
+    span {
+      color: rgba(0, 0, 0, 0.8);
     }
   }
+}

@@ -166,15 +166,15 @@
     .card {
       &__content {
         &--out {
-          font-size: $size-typo-card;
+          font-size: $size-typo-card/1.2;
           .title {
-            font-size: $size-typo-heading-card;
+            font-size: $size-typo-heading-card/1.2;
           }
         }
         &--in {
           font-size: ($size-typo-card * 1.8)/1.4;
           .title {
-            font-size: ($size-typo-heading-card * 1.8)/1.4;
+            font-size: ($size-typo-heading-card * 1.8)/1.5;
           }
         }
       }
@@ -199,7 +199,8 @@
   .next {
     margin-bottom: 0;
     &__heading {
-      font-size: $size-typo-next/2;
+      margin-top: 0;
+      font-size: $size-typo-next/2.2;
     }
   }
 }

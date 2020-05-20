@@ -1,29 +1,82 @@
-.menu {
-  @include menu-format;
-  &.menu--3 {
-    background-color: $color-menu-3;
-    .menu__heading {
-      font-size: $size-typo-heading-menu * 2;
-      font-weight: normal;
-      background: rgb(0, 40, 166);
-      background: linear-gradient(
-        152deg,
-        rgba(0, 39, 166, 0.945) 32%,
-        rgba(60, 164, 228, 0.979) 73%
-      );
-      @include gradient-text;
+.menu--3 {
+  background-color: $color-menu-3;
+  .menu__heading {
+    font-size: $size-typo-heading-menu * 1.7;
+    font-weight: normal;
+    background: rgb(0, 40, 166);
+    background: linear-gradient(
+      152deg,
+      rgba(0, 39, 166, 0.945) 32%,
+      rgba(60, 164, 228, 0.979) 73%
+    );
+    @include gradient-text;
+  }
+  .underline {
+    background: linear-gradient(
+        to top,
+        rgba(0, 39, 166, 0.945) 0%,
+        rgba(60, 164, 228, 0.979) 0.1rem,
+        transparent 2px
+      )
+      no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 400ms cubic-bezier(0.5, 0.02, 0.04, 0.98);
+    &:hover {
+      background-size: 100% 100%;
     }
-    .menu__content {
-      background: linear-gradient(
-        180deg,
-        rgba(0, 40, 166, 0.8660057773109244) 42%,
-        rgba(60, 165, 228, 0.924829306722689) 73%
-      );
-      @include gradient-text;
-    }
-    .menu__text,
-    .price {
-      color: rgba(0, 0, 0, 0.8);
-    }
+  }
+  .menu__content {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 40, 166, 0.8660057773109244) 42%,
+      rgba(60, 165, 228, 0.924829306722689) 73%
+    );
+    @include gradient-text;
+  }
+  .menu__text,
+  .price, .underline {
+    color: #404040d5;
+  }
+  .break--1::before {
+    border-top: 0.5rem solid;
+    color: #0E33AB;
+    content: "";
+    flex: 1;
+    margin: 0 3rem 0 0;
+  }
+  .break--1::after {
+    border-top: 0.5rem solid;
+    color: #0E33AB;
+    content: "";
+    flex: 1;
+    margin: 0 0 0 5rem;
+  }
+  .break--2::before {
+    border-top: 0.5rem solid;
+    color: #276BC7;
+    content: "";
+    flex: 1;
+    margin: 0 3rem 0 0;
+  }
+  .break--2::after {
+    border-top: 0.5rem solid;
+    color: #276BC7;
+    content: "";
+    flex: 1;
+    margin: 0 0 0 3rem;
+  }
+  .break--3::before {
+    border-top: 0.5rem solid;
+    color: #40A6E5;
+    content: "";
+    flex: 1;
+    margin: 0 1rem 0 0;
+  }
+  .break--3::after {
+    border-top: 0.5rem solid;
+    color: #40A6E5;
+    content: "";
+    flex: 1;
+    margin: 0 0 0 1rem;
   }
 }

@@ -19,7 +19,7 @@
 //Standard menu
 
 @mixin menu-format {
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,6 +27,7 @@
   box-shadow: 0.1em 0.1em 1em 0.5em rgba(0, 0, 0, 0.1);
   width: 70%;
   &__heading {
+    overflow-wrap: normal;
     text-align: center;
     font-size: $size-typo-heading-menu;
     margin-bottom: 0;
@@ -39,34 +40,20 @@
     h3 {
       margin: 0;
     }
-    b {
-      display: block;
+    .break {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding-top: 2.5em;
-      padding-bottom: 0.5em;
+      margin-top: 6rem;
+      margin-bottom: 3rem;
       font-size: $size-typo-label;
-      clear: both;
-    }
-    .underline {
-      background: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 1) 0%,
-          rgba(0, 0, 0, 1) 0.1rem,
-          transparent 1px
-        )
-        no-repeat;
-      background-size: 0% 100%;
-      transition: background-size 400ms cubic-bezier(.5,.02,.04,.98);
-      &:hover {
-        background-size: 100% 100%;
-      }
     }
     .text-line {
       display: flex;
       flex-direction: row;
     }
     .price {
-      width: 10%;
       display: inline;
       font-weight: bold;
       padding-left: 2rem;
@@ -77,6 +64,9 @@
       width: 90%;
       margin-top: 1.5rem;
     }
+    .underline {
+      padding: 0 0.5rem;
+    }
   }
   @include tablette-only {
     p {
@@ -84,8 +74,12 @@
     }
   }
   @include mobile-only {
+    padding: 2rem 2rem 2rem 2rem;
     p {
       margin-bottom: 3rem;
+    }
+    hr {
+      display: none;
     }
   }
 }

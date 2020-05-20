@@ -1,26 +1,79 @@
-.menu {
-  @include menu-format;
-  &.menu--1 {
-    background-color: $color-menu-1;
-    .fa--top {
-      text-align: center;
-      font-size: 6rem;
-      margin-top: 0.5rem;
-    }
-    .fa--bottom {
-      text-align: center;
-      font-size: 3rem;
-    }
-    i {
-      background: linear-gradient(
-        90deg,
-        rgba(221, 81, 46, 1) 13%,
-        rgba(251, 149, 94, 1) 56%,
-        rgba(254, 204, 177, 1) 98%
-      );
-      @include gradient-text;
+.menu--1 {
+  background-color: $color-menu-1;
+  .fa--top {
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 0.5rem;
   }
-}
+  .fa--bottom {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .underline {
+    background: linear-gradient(
+        to top,
+        rgba(40, 40, 40, 0.8) 0%,
+        rgba(40, 40, 40, 0.8) 0.1rem,
+        transparent 2px
+      )
+      no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 400ms cubic-bezier(0.5, 0.02, 0.04, 0.98);
+    &:hover {
+      background-size: 100% 100%;
+    }
+  }
+  .break--1::before {
+    border-top: 0.5rem solid;
+    color: #404040d5;
+    content: "";
+    flex: 1;
+    margin: 0 5rem 0 0;
+  }
+  .break--1::after {
+    border-top: 0.5rem solid;
+    color: #404040d5;
+    content: "";
+    flex: 1;
+    margin: 0 0 0 5rem;
+  }
+  .break--2::before {
+    border-top: 0.5rem solid;
+    color: #404040d5;
+    content: "";
+    flex: 1;
+    margin: 0 3rem 0 0;
+  }
+  .break--2::after {
+    border-top: 0.5rem solid;
+    color: #404040d5;
+    content: "";
+    flex: 1;
+    margin: 0 0 0 3rem;
+  }
+  .break--3::before {
+    border-top: 0.5rem solid;
+    color: #404040d5;
+    content: "";
+    flex: 1;
+    margin: 0 1rem 0 0;
+  }
+  .break--3::after {
+    border-top: 0.5rem solid;
+    color: #404040d5;
+    content: "";
+    flex: 1;
+    margin: 0 0 0 1rem;
+  }
+  i {
+    background: linear-gradient(
+      90deg,
+      rgba(221, 81, 46, 1) 13%,
+      rgba(251, 149, 94, 1) 56%,
+      rgba(254, 204, 177, 1) 98%
+    );
+    @include gradient-text;
+  }
 }
 
 .menu__foot {

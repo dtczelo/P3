@@ -20,7 +20,7 @@ body {
 
 .card {
   &.card--1 {
-    .title {
+    .card__heading {
       font-family: $font-heading-1;
     }
     p {
@@ -42,7 +42,7 @@ body {
 
 .card {
   &.card--2 {
-    .title {
+    .card__heading {
       font-family: $font-heading-2;
     }
     p {
@@ -64,7 +64,7 @@ body {
 
 .card {
   &.card--3 {
-    .title {
+    .card__heading {
       font-family: $font-heading-3;
     }
     p {
@@ -86,7 +86,7 @@ body {
 
 .card {
   &.card--4 {
-    .title {
+    .card__heading {
       font-family: $font-heading-4;
     }
     p {

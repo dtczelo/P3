@@ -36,41 +36,41 @@
     color: #D29054;
     content: "";
     flex: 1;
-    margin: 0 3rem 0 0;
+    margin: 0 1rem 0 0;
   }
   .break--1::after {
     border-top: 0.5rem solid;
     color: #D29054;
     content: "";
     flex: 1;
-    margin: 0 0 0 5rem;
+    margin: 0 0 0 1rem;
   }
   .break--2::before {
     border-top: 0.5rem solid;
     color: #BF866F;
     content: "";
     flex: 1;
-    margin: 0 3rem 0 0;
+    margin: 0 5rem 0 0;
   }
   .break--2::after {
     border-top: 0.5rem solid;
     color: #BF866F;
     content: "";
     flex: 1;
-    margin: 0 0 0 3rem;
+    margin: 0 0 0 5rem;
   }
   .break--3::before {
     border-top: 0.5rem solid;
     color: #826ACA;
     content: "";
     flex: 1;
-    margin: 0 1rem 0 0;
+    margin: 0 3rem 0 0;
   }
   .break--3::after {
     border-top: 0.5rem solid;
     color: #826ACA;
     content: "";
     flex: 1;
-    margin: 0 0 0 1rem;
+    margin: 0 0 0 3rem;
   }
 }

@@ -32,47 +32,43 @@
   .break--1::before {
     border-top: 0.5rem solid;
     content: "";
-    background: linear-gradient(
-      135deg,
-      rgba(13, 145, 0, 0.8155856092436975) 35%,
-      rgba(33, 195, 14, 0.33939513305322133) 70%
-    );
+    color: #39A52F;
     flex: 1;
     margin: 0 5rem 0 0;
   }
   .break--1::after {
     border-top: 0.5rem solid;
-    color: #404040d5;
+    color: #39A52F;
     content: "";
     flex: 1;
     margin: 0 0 0 5rem;
   }
   .break--2::before {
     border-top: 0.5rem solid;
-    color: #404040d5;
+    color: #82CF7A;
     content: "";
     flex: 1;
-    margin: 0 3rem 0 0;
+    margin: 0 2rem 0 0;
   }
   .break--2::after {
     border-top: 0.5rem solid;
-    color: #404040d5;
+    color: #82CF7A;
     content: "";
     flex: 1;
-    margin: 0 0 0 3rem;
+    margin: 0 0 0 2rem;
   }
   .break--3::before {
     border-top: 0.5rem solid;
-    color: #404040d5;
+    color: #82CF7A;
     content: "";
     flex: 1;
-    margin: 0 1rem 0 0;
+    margin: 0 2rem 0 0;
   }
   .break--3::after {
     border-top: 0.5rem solid;
-    color: #404040d5;
+    color: #82CF7A;
     content: "";
     flex: 1;
-    margin: 0 0 0 1rem;
+    margin: 0 0 0 2rem;
   }
 }

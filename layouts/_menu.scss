@@ -26,7 +26,7 @@
       align-items: center;
       text-align: center;
       margin-top: 6rem;
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
       font-size: $size-typo-label;
     }
     .text-line {
@@ -38,11 +38,11 @@
       font-weight: bold;
       padding-left: 2rem;
       overflow-wrap: normal;
-      margin-top: 1.5rem;
     }
     p {
       width: 90%;
-      margin-top: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 2rem;
     }
   }
   @include tablette-only {

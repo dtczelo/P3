@@ -179,8 +179,8 @@ body {
 }
 
 .footer__btn:hover {
-  -webkit-animation: wiggle 200ms linear 3 both;
-          animation: wiggle 200ms linear 3 both;
+  -webkit-animation: wiggle 200ms linear 3;
+          animation: wiggle 200ms linear 3;
 }
 
 @-webkit-keyframes wiggle {
